@@ -1,0 +1,239 @@
+body
+{
+	background: #3198EB;
+}
+ nav ul li 
+ {
+ 	/* 
+bordes y sombreados*/
+float:left;	
+    font-family:Arial, Helvetica, sans-serif;	/* estadndar por defeto*/
+    font-size:16px;
+    font-weight:bold;
+    margin-right:10px;
+    text-align:center;
+    text-shadow: 0px 1px 0px #FFF;
+ 
+ 	}
+
+ 	nav
+ 	{
+
+   border-radius:10px;/*El estandar por defecto*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
+    /*Degradados*/
+    background-image: -moz-linear-gradient(top center, #FFF, #CCC);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
+    background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
+    overflow:hidden;
+    padding:10px;
+    width:1000p
+
+ 	}
+ 	nav ul
+ 	{
+ 		list-style: none;
+ 		margin:0 10px 0 10px;
+ 		padding:0;
+ 	}
+ 	nav ul li:hover
+ {
+background-image: linear-gradient(top, #FFF, #E3E3E3);/*Estandar por defecto*/
+    /*Sombras*/
+    -webkit-box-shadow:  1px -1px 0px #999;/*Chrome y Safari*/
+    -moz-box-shadow:  1px -1px 0px #999;/*Firefox*/
+    -o-box-shadow:  1px -1px 0px #999;/*Opera*/
+    box-shadow:  1px -1px 0px #999;/*Estandar por defecto*/
+    border:1px solid #E3E3E3; 
+
+}
+nav ul li a
+{
+	 color:#dd2c00;
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    /*Transiciones*/
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+}
+nav ul li a:hover
+{
+	color:#000;
+}
+HR
+{
+	
+	border-width:4px;
+    border-style:dotted;
+    border-color:orange;
+    width:50%;
+
+}
+
+div
+{
+	border-top: 3px solid red;
+	border-bottom: 2px dotted green;
+ border-right: 1px dashed #3C5391;
+  border-left: 1px inset orange;
+
+
+}
+apartado1{
+   width:300px;
+   height:100px;
+   border:3px solid brown;
+   border-radius:22px;
+   background-color:#e3d193;
+   padding:9px;
+
+}
+sombra
+{
+    box-shadow: 6px 20px 10px black;
+}
+section
+{
+    box-shadow: 60px 20px 5px orange;
+}
+footer
+{
+    box-shadow: 5px 20px 1px skyblue;
+}
+interna
+{
+    box-shadow: 20px 7px 5px black inset;
+     padding:20px 20px;
+    background:coral;
+
+}
+resplandor
+{
+    background: #C433FF;
+      padding:20px 20px;
+     box-shadow: 0px 0px 30px blue;
+    width: 50%;
+    
+}
+sombra_texto
+{
+
+    text-shadow: 10px 10px 5px gray;
+}
+sombra_multiple
+{
+ box-shadow: 0px 0px 20px red inset, 0px 0px 25px blue;
+     padding:20px 20px; 
+    width: 70px
+
+}
+columnas
+{
+  column-count:4;
+   column-gap:20px;
+   column-rule:4px Inset gray;
+   list-style: none;
+
+
+    -webkit-column-count:4;
+   -webkit-column-gap:20px;
+   -webkit-column-rule:4px  double black;   
+}
+
+colores
+{
+
+  background-color:rgba(255,0,0,0.10);
+   padding:20px 20px;
+     box-shadow: 0px 0px 30px blue;
+    width: 50%;    
+}
+Degrados_Lineales
+{
+background:linear-gradient(top, red, gold);
+}
+Ejemplo
+{
+    background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple);
+}
+Ejemplo2
+{
+background:radial-gradient(200px top, ellipse, white,  #1162ac,black);
+}
+Ejemplo_p
+{
+
+background:radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+}
+
+martillo 
+{
+  animation:animacion_martillo 2s;
+
+}
+@keyframes animacion_martillo {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+martillo {
+  animation:animacion_martillo 2s;
+  position:relative;
+}
+
+keyframes animacion_martillo {
+  0% {
+    transform: rotate(0deg);
+    top:0px
+  }
+  42% {
+    transform: rotate(90deg);
+    top:57px
+  }
+  60% {
+    transform: rotate(90deg);
+    top:57px
+  }
+  100% {
+    transform: rotate(0deg);
+    top:0px
+  }
+}
+body{
+      background-color:#3198EB;
+      font-size:14px;
+   }
+#bloque1{
+      font-size:15px;
+   }
+
+@media only screen and (max-width:320px){
+  
+  }
+
+    #bloque1{
+      font-size:12px;
+    }
+ @media only screen and (max-width:320px){
+  <!--Este mediaquerie se ejecutará sólo cuando la resolución horizontal sea menor de 320 píxeles-->
+}
+
+@media only screen and (min-width:980px){
+  <!--Este mediaquerie se ejecutará sólo cuando la resolución horizontal sea mayor de 980 píxeles-->
+}
+    
+  
+
+
+
+
+

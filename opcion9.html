@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> SVG (GRAFICOS VECTORIALES</title>
+	<link rel="stylesheet" type="text/css" href="CSS/estilo1.css">
+</head>
+<body>
+<head> <img src="IMAGENES/encabezado1.png"> </head>
+
+<nav>
+	<ul>
+	             <li> <a href="inicio.html"> Inicion</li>
+	             <li> <a href="Bordes.html" > Bordes</li>
+                 <li> <a href="Sombras.html" > Sombras</li>
+	    	     <li> <a href="opcion3.html"> opcion3</li>
+	             <li> <a href="opcion4.html"> opcion4</li>
+	             <li> <a href="opcion5.html"> opcion5</li>
+	    	     <li> <a href="opcion6.html"> opcion6</li>
+	             <li> <a href="opcion7.html"> opcion7</li>
+	        	 <li> <a href="opcion8.html"> opcion8</li>
+	             <li> <a href="opcion9.html"> opcion9</li>
+	    		 <li> <a href="opcion10.html">opcion10 </li>
+	             <li> <a href="opcion11.html"> opcion11</li>
+	         	 <li> <a href="opcion12.html"> opcion12</li>	
+	         	 <li> <a href="opcion13.html"> opcion13</li>	
+	</ul>
+</nav>
+
+<section>
+	
+<h1> SVG ( GRAFICOS VECTORIALES) </h1>
+<br>
+<h1> EJEMPLO SIMPLE</h1>
+
+<svg width="150" height="90" xmlns="http://www.w3.org/2000/svg">
+  <rect width="150" height="90"  fill="white" stroke="black" stroke-width="1"/>
+  <circle cx="75" cy="45" r="35" fill="red"/>
+</svg>
+<br>
+<h1> SV </h1>
+<p>	
+Lo primero y obligatorio es agrupar todos los atributos dentro de un svg>.
+Cabe decir que en los casos de Catalunya y Noruega (de los ejemplos superiores) los 'rect' utilizados no se han encerrado en un svg> para no romper la maquetación que iguala a todas las banderas, pero para que su código sea correcto debe estar contenido entre un svg> y un />svg>.
+</p>
+ <rect width="150" height="90"  fill="white" stroke="black" stroke-width="1"/>
+  <circle cx="75" cy="45" r="35" fill="red"/>
+<br>
+<h1> RECT </h1>
+<p>
+x: Coordenada horizontal desde donde se va a empezar a dibujar el rectángulo.
+y: Coordenada vertical desde donde se va a empezar a dibujar el rectángulo.
+rx: Suavidad de los bordes horizontales (el valor 0 equivale a esquinas puntiagudas "no redondeadas")
+</p>
+
+<h1> ejemplo rectangulo</h1>
+<svg>
+	 <rect width="150" height="90"  fill="white" stroke="black" stroke-width="1"/>
+</svg>	
+<h1> CIRCULO</h1>
+<svg>
+<circle cx="100" cy="100" r="45" fill="olive" stroke="black" stroke-width="1" opacity="0.9"/>
+</svg>
+<h1> eclipse </h1>
+<svg>
+<ellipse cx="100" cy="100" rx="50" ry="25" fill="purple" stroke="black" stroke-width="1"/>
+</svg>
+<h1> line</h1>	
+<SVG>
+	Se puedan crear líneas rectas, pudiendo especificar el tipo de línea:
+	<line x1="0" y1="0" x2="260" y2="40" stroke="fuchsia" stroke-width="4" stroke-dasharray="18,7,9,20"/>
+</SVG>
+<h1> polyline </h1> 
+<SVG>
+	<polyline points="0,90, 10,90, 10,40, 40,10, 50,20, 50,10, 60,10, 60,30, 70,40, 70,90, 80,90" fill="none" stroke="black" stroke-width="3"/>
+	</SVG>
+<h1> polygon </h1>
+<SVG>
+<polygon points="50,0, 82,100, 0,37, 100,37, 20,100, 50,0" fill="gold" stroke="black" stroke-width="3"/>
+<polygon points="50,0, 62,37, 100,37, 70,61, 82,100,  50,75,  20,100,  31,61, 0,37,  39,37,  50,0" fill="gold" stroke="black" stroke-width="3"/>
+</SVG>
+<h1> text </h1>
+<SVG>
+	<text x="30" y="35" rotate="17 0 -9 11 10 -3" fill="black" stroke="white" stroke-width="2"> Argoty
+</text>
+</SVG>
+
+
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> canvas html </title>
+
+</head>
+<body>
+<head> <img src="IMAGENES/encabezado1.png"> </head>
+<link rel="stylesheet" type="text/css" href="CSS/estilo1.css">
+<nav>
+	<ul>
+		
+		         <li> <a href="inicio.html"> Inicion</li>
+	             <li> <a href="Bordes.html" > Bordes</li>
+                 <li> <a href="Sombras.html" > Sombras</li>
+	    	   	<li> <a href="opcion3.html"> opcion3</li>
+	            <li> <a href="opcion4.html"> opcion4</li>
+	    		<li> <a href="opcion5.html"> opcion5</li>
+	    		<li> <a href="opcion6.html"> opcion6</li>
+	            <li> <a href="opcion7.html"> opcion7</li>
+	         	<li> <a href="opcion8.html"> opcion8</li>
+	            <li> <a href="opcion9.html"> opcion9</li>
+	    		<li> <a href="opcion10.html">opcion10 </li>
+	            <li> <a href="opcion11.html"> opcion11</li>
+	         	<li> <a href="opcion12.html"> opcion12</li>	
+	         	<li> <a href="opcion13.html"> opcion13</li>	
+	
+	   
+	</ul>
+
+<section>
+<h1> canvas</h1>
+<canvas id="mCanvas" width="200" height="100"></canvas>
+
+<h1> ejemplo 1 de canvas</h1>
+<canvas id="mCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas>
+<h1> ejemplo 2 de canvas </h1>
+<canvas id="mCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0, 0);
+ctx.lineTo(200, 100);
+ctx.stroke();
+</script>
+</canvas>
+<h1> ejemplo 3 </h1>
+<canvas id="mCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hello World", 10, 50);
+</script>
+</canvas>
+<h1> ejemplo 4</h1>
+<canvas id="mCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Hello World", 10, 50);
+</script>
+</canvas>
+
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+</script>
+</canvas>
+</section>
+</body>
+</html>

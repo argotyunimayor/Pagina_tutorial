@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Colores, transparencias y degradados </title>
+</head>
+<body>
+	<head> <img src="IMAGENES/encabezado1.png"> </head>
+
+<link rel="stylesheet" type="text/css" href="CSS/estilo1.css">
+<nav>
+	<ul>
+	
+		        <li> <a href="inicio.html"> Inicion</li>
+	            <li> <a href="Bordes.html" > Bordes</li>
+                <li> <a href="Sombras.html" > Sombras</li>
+	    	   	<li> <a href="opcion3.html"> opcion3</li>
+	            <li> <a href="opcion4.html"> opcion4</li>
+	    		<li> <a href="opcion5.html"> opcion5</li>
+	    		<li> <a href="opcion6.html"> opcion6</li>
+	            <li> <a href="opcion7.html"> opcion7</li>
+	         	<li> <a href="opcion8.html"> opcion8</li>
+	            <li> <a href="opcion9.html"> opcion9</li>
+	    		<li> <a href="opcion10.html">opcion10 </li>
+	            <li> <a href="opcion11.html"> opcion11</li>
+	         	<li> <a href="opcion12.html"> opcion12</li>	
+	         	<li> <a href="opcion13.html"> opcion13</li>	
+	         	</ul>
+<section>
+	<br>
+<h1> Colores predefinidos</h1>
+<p>
+	En HTML5 existen colores predefinidos que tienen nombres mucho más fáciles de recordar que sus respectivos códigos hexadecimales. Es mucho más fácil acordarse de nombres de colores como 'Tomato', 'Gold', 'Olive', 'Chocolate', 'Silver', 'Magenta' o 'Salmon' que de sus respectivos códigos de color en hexadecimal: '#FF6347', '#FFD700', '#808000', '#D2691E', '#C0C0C0', '#FF00FF' o '#FA8072'.
+
+
+color=tomato;
+color=#FF6347:
+</p>	
+<h1> Transparencias</h1>
+
+<div id="colores"  >
+Esta mañana me he levantado,
+oh bella ciao, bella ciao, bella ciao, ciao, ciao!
+(Adiós bella)
+Esta mañana me he levantado
+y he descubierto al invasor.
+
+Oh compañero, quiero ir contigo,
+oh bella ciao, bella ciao, bella ciao, ciao, ciao
+oh compañero, quiero ir contigo.
+Porque me siento aquí morir.
+
+
+</div>
+
+<h1> Degradados</h1>
+<p>
+Los degradados a través de código CSS3 han sido una de las que más vueltas han dado hasta estabilizarse y generalizarse de la misma forma en (casi) todos los navegadores.
+Vamos a dejar en el bául del ólvido el infernal código de degradado que utilizaban las versiones de Chrome anteriores a la 10 y de Safari anteriores a la 5 y nos vamos a concentar en el código genérico que funciona en:
+
+Firefox 3.6+
+Chrome +10
+Safari +5.1
+Opera 11.10+ (Sólo degradados lineales)
+(e increiblemente en) Internet Explorer 10
+	
+</p>
+<h1> Degrados Lineales</h1>
+<p>
+	Primero definimos dónde empieza el degradado (top, bottom, right, left) o bien indicando un ángulo (45deg), seguido de los colores que compondrán el degradado y de manera opcional se puede indicar cuánto durará cada color (en porcentaje).
+</p>
+
+
+<div id="Degrados_Lineales">
+Esta mañana me he levantado,
+oh bella ciao, bella ciao, bella ciao, ciao, ciao!
+(Adiós bella)
+Esta mañana me he levantado
+y he descubierto al invasor.
+
+Oh compañero, quiero ir contigo,
+oh bella ciao, bella ciao, bella ciao, ciao, ciao
+oh compañero, quiero ir contigo.
+Porque me siento aquí morir.
+
+</div>
+
+<h1> ejemplo 1 </h1>
+<div id="Ejemplo">
+	Degradado lineal (linear-gradient) que se inicia en la esquina superior izquierda con una inclinación de 30 grados (30deg) y que en toda su extensión pasa por los colores crimson, sienna, royalblue, indianred y purple.
+
+</div>
+<h1>
+Degradados radiales	
+</h1>
+<p>
+Aunque Opera todavía no admite degradados radiales, la estructura y sintaxis es muy parecida a los degradados lineales aunque utilizando radial-gradient.
+Primero definimos dónde está el centro del degradado a través de una posición horizontal y luego una vertical (utilizando center, top, bottom, right, left o unas coordenadas en píxeles 125px 200px). Seguidamente se define la forma (circle o ellipse). Después opcionalmente se puede definir cómo se expandirá el degradado. Por último se definen los colores que compondrán el degradado y de manera opcional se puede indicar cuánto durará cada color (en porcentaje).
+background:radial-gradient(dónde está el centro, circle/ellipse expansión del degradado, color1, 40%, color2, 60%);	
+</p>
+<h1> ejemplo 2</h1>
+<div id="Ejemplo2">
+	
+	Degradado radial (radial-gradient) que empieza horizontalmente a 200px de la esquina superior izquierda y verticalmente en la parte superior (top) y que con forma elíptica (ellipse) va del color white hasta el black, pasando -por partes iguales- por el azul con código de color #1162ac.
+</div>
+<h1> Ejemplo3</h1>
+<div id="Ejemplo_p">
+	
+Degradado radial (radial-gradient) que empieza en el centro (center center) y que define las dimensiones elípticas de los colores que se van a utilizar. White en un 25%, peru en un 41% (del 25 al 66%) y black en un 30% (del 66 al 96%), ocupando también el 4% restante al no indicarse más colores.
+Degradado radial (radial-gradient) que empieza en el centro (center center) y que define las dimensiones elípticas de los colores que se van a utilizar. White en un 25%, peru en un 41% (del 25 al 66%) y black en un 30% (del 66 al 96%), ocupando también el 4% restante al no indicarse más colores.
+
+</div>
+
+
+
+
+
+
+
+</section>
+</body>
+</html>

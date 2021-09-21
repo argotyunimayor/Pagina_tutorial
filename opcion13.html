@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Guardar de datos con local Storage </title>
+	<link rel="stylesheet" type="text/css" href="CSS/estilo1.css">
+</head>
+<body>
+<head> <img src="IMAGENES/encabezado1.png"> </head>
+<nav>
+	<ul>
+		
+		         <li> <a href="index.html"> Inicion</li>
+	             <li> <a href="Bordes.html" > Bordes</li>
+                 <li> <a href="Sombras.html" > Sombras</li>
+	    	   	<li> <a href="opcion3.html"> opcion3</li>
+	            <li> <a href="opcion4.html"> opcion4</li>
+	    		<li> <a href="opcion5.html"> opcion5</li>
+	    		<li> <a href="opcion6.html"> opcion6</li>
+	            <li> <a href="opcion7.html"> opcion7</li>
+	         	<li> <a href="opcion8.html"> opcion8</li>
+	            <li> <a href="opcion9.html"> opcion9</li>
+	    		<li> <a href="opcion10.html">opcion10 </li>
+	            <li> <a href="opcion11.html"> opcion11</li>
+	         	<li> <a href="opcion12.html"> opcion12</li>	
+	         	<li> <a href="opcion13.html"> opcion13</li>	
+	   
+	</ul>
+</nav>
+
+<section>
+	
+	<h1> ejemplo de storage </h1>
+	Para hacernos una idea más rápidamente de qué es y de las posibilidades de Storage vamos a empezar el tema con un ejemplo práctico.
+Si esta es la primera vez que accedes a esta página y no has rellenado antes el formulario siguiente (como no habrá información guardada al respecto) en el siguiente cuadro el navegador te pedirá tu nombre ya que no lo sabe . Si escribes tu nombre y pulsas en el botón 'Guardar', las siguientes veces que accedas a esta página el navegador ya sabrá tu nombre y automáticamente te saludará por él (o al menos por el texto que escribiste -todavía no hay manera de saber si lo que escribiste es tu nombre real-).
+
+<h1> Tipos de Datos Guardados</h1>
+Como hemos visto con el ejemplo anterior, con HTML5 ya es posible guardar datos (locales) en el ordenador del usuario sin limitación de tiempo, sin que estos datos se borren en cada sesión, con una limitación de tamaño de hasta 5 Mb, sin tener que disponer de ningún servidor, ni base de datos y sin tener que utilizar cookies.
+Existen dos tipos de almacenamiento (de corta y larga duración):
+sessionStorage: Los datos guardados permanecen mientras el usuario tiene el navegador abierto. Al cerrar el navegador los datos se borran automáticamente.
+localStorage: Los datos guardados permanecen siempre, incluso si se cierra el navegador y se apaga el ordenador.
+
+<h1> palabras magicas</h1>
+<script type="text/javascript">
+</script>
+<h1> guardar datos</h1>
+<p>
+a) localStorage (si los datos serán permanentes) o sessionStorage (si los datos se borrarán cuando el usuario cierre el navegador).
+b) Un nombre que le daremos a esa información (este valor sólo sirve para poder hacer referencia a ella).
+c) La información a guardar (normalmente escrita entre comillas).	
+</p>
+
+<script type="text/javascript">
+	localStorage.nombre='Javier'
+</script>
+
+<h1> recuperar informacion </h1>
+<p>
+Para leer o recuperar la información necesitamos también 3 datos:
+a) localStorage (si los datos eran permanentes) o sessionStorage (si los datos tenían sólo vigencia dentro de la presente sesión).
+b) El nombre que le dimos a esa información cuando se guardó.
+c) Una variable donde guardar dicha información (o en su defecto un alert que muestre en pantalla dicha información).	
+</p>
+<script type="text/javascript">
+	alert('La información recuperada ha sido '+ localStorage.nombre);
+</script>
+<h1> eliminar dato</h1>
+<p>
+	Para eliminar únicamente un dato utilizamos la orden 'localStorage.removeItem()':
+</p>
+<script type="text/javascript">
+localStorage.removeItem('nombre');	
+</script>
+<h1> Elimiar totos los datos existentes </h1>
+<p>
+	Con este código eliminamos todos los datos, tantos permanentes como los que tienen vigencia dentro de la presente sesión del navegador.
+</p>
+<script type="text/javascript">
+	localStorage.clear();
+	sessionStorage.clear();
+</script>
+<h1> Para Conocer cuantos datos hay </h1>
+<p>
+Ya, para rizar el rizo, podemos conocer cuántos elementos (permanentes o no) hay guardados utilizando el atributo '.length'.	
+</p>
+<script type="text/javascript">
+alert('hay'+localStorage+length + 'elementos guardados');
+</script>
+<h1> EJEMPLO PRACTICO</h1>
+<script type="text/javascript">
+   if (localStorage.veces==undefined){
+      localStorage.veces=1;
+   } else {
+      localStorage.veces=Number(localStorage.veces)+1;
+   }
+   document.write("Visitas: "+localStorage.veces+" veces.");
+</script>
+
+
+
+
+
+</section>
+</body>
+</html>
