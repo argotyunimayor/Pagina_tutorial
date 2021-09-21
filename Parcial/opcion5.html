@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Video</title>
+</head>
+<body>
+<head> <img src="IMAGENES/encabezado1.png"> </head>
+<link rel="stylesheet" type="text/css" href="CSS/estilo1.css">
+<nav>
+	<ul>
+		
+		            <li> <a href="inicio.html"> Inicion</li>
+	              <li> <a href="Bordes.html" > Bordes</li>
+                 <li> <a href="Sombras.html" > Sombras</li>
+	    	   	  <li> <a href="opcion3.html"> opcion3</li>
+	              <li> <a href="opcion4.html"> opcion4</li>
+	    		     <li> <a href="opcion5.html"> opcion5</li>
+	    		     <li> <a href="opcion6.html"> opcion6</li>
+	              <li> <a href="opcion7.html"> opcion7</li>
+	         	  <li> <a href="opcion8.html"> opcion8</li>
+	              <li> <a href="opcion9.html"> opcion9</li>
+	    		     <li> <a href="opcion10.html">opcion10 </li>
+	              <li> <a href="opcion11.html"> opcion11</li>
+	         	  <li> <a href="opcion12.html"> opcion12</li>	
+	         	  <li> <a href="opcion13.html"> opcion13</li>	
+	         	 </ul>
+	
+<section> 
+	<h1> video</h1>
+	<p>
+		width: Indica la anchura del vídeo, expresada en píxeles (px) o en porcentaje (%)
+height: Indica la altura del vídeo, expresada en píxeles (px) o en porcentaje (%)
+controls: Establece si tendrá la barra de navegación (play, stop, volumen...) o no
+autoplay: Indica si el vídeo se inicia detenido o ya aparece por defecto reproduciéndose
+loop: Establece si al acabar el vídeo, éste debe volver a empezar o no
+muted: Indica si el audio se reproduce o se reproduce sin audio
+preload: Indica si el vídeo se empieza a cargar cuando el navegador carga la página html
+poster: Da la posibilidad de establecer una imagen (jpg, gif o png) como fotograma inicial del video
+		
+	</p>
+	
+	<h1> ejemplo 1</h1>
+	<video width="800" height="600" controls autoplay loop poster="fotograma.png">
+   <source src="video.ogv" type="video/ogg"/>
+</video>
+
+<h1> ejemplo 2</h1>
+<video width="800" height="600" controls autoplay loop poster="fotograma.png">
+   <source src="VIDEOS/video.ogv" type="video/ogg"/>
+   <source src="VIDEOS/video.mp4" type="video/mp4"/>
+   <source src="VIDEOS/video.webm" type="video/webm"/>
+	  
+   <object width="800" height="600" data="video.flv">
+   <param name="movie" value="video.flv">
+   <embed src="video.flv" width="800" height="600">
+   </object>
+
+   <p>Tu navegador no soporta HTML5</p>
+</video>
+
+   <h1> ejemplo 3</h1>
+   <iframe width="640" height="360" src="https://youtu.be/6yCx71AR9os" frameborder="0" allowfullscreen></iframe>
+
+
+</section>
+
+
+</body>
+
+</html>
